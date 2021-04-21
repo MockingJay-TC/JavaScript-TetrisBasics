@@ -1,40 +1,62 @@
-.container{
-    display: flex;
+body {
+  font-family: Bitter;
+
+  height: 100vh;
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/tetris.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  position: relative;
+  color: white;
+  text-align: center;
 }
 
-.grid{
-    width: 200px;
-    height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(230, 224, 224);
-    outline: 1px solid black;
+.container {
+  display: flex;
+  margin-left: 500px;
+}
+h1 {
+  text-align: center;
+  font-size: 4rem;
 }
 
-.grid div{
-    height: 20px;
-    width: 20px;
-    outline: 0.1px solid white;
-    /* background-color: red; */
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(230, 224, 224);
+  outline: 1px solid black;
 }
 
-.tetromino{
-    background-color: blue;
+.grid div {
+  height: 20px;
+  width: 20px;
+  outline: 0.1px solid white;
+  /* background-color: red; */
 }
 
-.mini-grid{
-    margin-left: 20px;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(230, 224, 224);
-    outline: 1px solid black;
-    /* border: none !important; */
+.tetromino {
+  background-color: blue;
 }
 
-.mini-grid div{
-    height: 20px;
-    width: 20px;
-    outline: 0.1px solid white;
+.mini-grid {
+  margin-left: 20px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(230, 224, 224);
+  outline: 1px solid black;
+  /* border: none !important; */
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+  outline: 0.1px solid white;
 }
